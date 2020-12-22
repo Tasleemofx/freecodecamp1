@@ -1,0 +1,74 @@
+#advert{
+    background-color: red;
+    width: auto;
+    height: 200px;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.9em;
+    text-align: center;
+}
+#main{
+    display: grid;
+    grid-template-areas: 
+    "header header  header"
+    "nav    nav     nav"
+    "body1  body1   body1"
+    "body   body    body"
+    "form   form    form"
+    "footer footer  footer"
+}
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+}
+nav ul li :hover{
+    display: inline;
+    color: orange;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.heade, #title{
+    text-align: center;
+}
+#advert{
+    grid-area:advert;
+}
+#heading{
+    grid-area: header;
+    background-color: maroon;
+    color: ivory;
+}
+#nav{
+    grid-area: nav;
+}
+#img-div{
+    grid-area: body1;
+    justify-content: center;
+    align-content: center;
+}
+#image{
+        width: 100%;
+        height: auto;
+        max-width: 625px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    
+}
+#tribute-info{
+    grid-area: body;
+}
+footer{
+    grid-area: footer ;
+    text-align: center;
+}
+#contactForm{
+    grid-area: form;
+}
+@media screen and (max-width: 600px){
+    #image {
+        height: 300px;
+        width:400px;
+    }
+}
